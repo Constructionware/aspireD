@@ -1,0 +1,3 @@
+include LICENSE 
+graft aspired
+global-exclude *.pyc *.swp
