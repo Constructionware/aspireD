@@ -25,8 +25,11 @@ api.add_resource(Database, '/<string:dbname>/<string:password>')
 
 api.add_resource(PublicDocument, '/<string:dbname>/<string:doc_id>/<string:clone_id>')
 
-api.add_resource(PublicDocument, '/<string:dbname>/<string:doc_id>/<string:clone_id>')
+api.add_resource(PrivateDocument, '/<string:dbname>/<string:doc_id>/<string:clone_id>')
+
+def serve():
+    app.run(debug=debug)
 
 if __name__ == '__main__':
-    app.run(debug=debug)
+    serve()
 

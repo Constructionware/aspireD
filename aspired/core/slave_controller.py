@@ -273,7 +273,7 @@ class  Slave:
             del(handle)
 
 
-    async def delete_doc(self, args=None, **kwargs):
+    def delete_doc(self, args=None, **kwargs):
         '''deletes a document permanently from the system but keeps a reference in log, deleted documents are placed in a dump directory 
         and kept for 30days before final deletion 
         requires user password for public repositories and lock password for encrypted or private repositories 

@@ -6,8 +6,8 @@
 # master directory 
 
 #---------------------------- DEPENDENTS ----------------------------------------
-import json
-import orjson 
+
+import orjson as json
 from datetime import datetime
 from http import HTTPStatus as status
 from time import sleep
@@ -23,8 +23,6 @@ import shutil
 
 # ----------------------------- UTILITIES ---------------------------------------
 
-# Unique ID Generator
-#ugen = GenerateId()
 
 # Timestamp 
 def timestamp():
@@ -67,7 +65,7 @@ def updateIndex(data, handle):
     
 
 
-# ------------------------------- ASPIREDB MASTER CONTROLLER -------------------
+# ------------------------------- ASPIRED MASTER CONTROLLER -------------------
 
 class  Master:
     '''Main database controller responsible for creating and destroying slaves.
