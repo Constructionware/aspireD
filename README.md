@@ -44,7 +44,8 @@ import the Database Controller into your program
 
     from aspiredb.database import Controller
 
-upon initializing the controller a hidden directory is created in the user Home directory called .aspiredb in which all databases and regords are stored.
+upon initializing the controller a hidden directory is created in the user Home directory called .aspiredb 
+in which all databases and records are stored.
 
     con = Controller()
 
